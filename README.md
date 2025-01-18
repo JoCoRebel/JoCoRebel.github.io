@@ -13,7 +13,7 @@ assignments go here
   * Engineering/fabrication
 
 ## Websites I Recommend
-  * [GitHub] (https://github.com) - I have always enjoyed using and even just reading about projects on GitHub.  Now I get to ocreate one!
+  * [GitHub] (https://github.com) - I have always enjoyed using and even just reading about projects on GitHub.  Now I get to create one!
   * [Youtube] (https://youtube.com) - Slam packed full of information and entertainment on a broad aray of topics.
  
 
@@ -122,4 +122,4 @@ assignments go here
 
 
 
-## Recommended Websites
+
