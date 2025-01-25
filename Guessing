@@ -1,7 +1,6 @@
 ## Number Guessing Game
 
-```mermaid
-flowchart TD
+```mermaid flowchart TD
   start([Start])
   randomNum(1,100)
   askGuess(Enter your guess from 1 to 100)
@@ -11,9 +10,8 @@ flowchart TD
   else if (Guess > randomNum)
     then(Too High! Try Again!)
     jump askGuess
-else
-  then(Correct)
-  end([You Win!])
-
-
+  else
+    then(Correct)
+    end([You Win!])
+end
 ```
