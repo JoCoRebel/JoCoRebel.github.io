@@ -5,10 +5,10 @@ flowchart TD
 Start([Start])
   randomNum(1,100)
   askGuess(Enter your guess from 1 to 100)
-  if (Guess < randomNum)
+  if (guess < randomNum)
     then(Too Low! Try Again!)
     jump askGuess
-  else if (Guess > randomNum)
+  else if (guess > randomNum)
     then(Too High! Try Again!)
     jump askGuess
   else
