@@ -1,6 +1,7 @@
 ## Number Guessing Game
 
-```mermaid flowchart TD
+```mermaid
+flowchart TD
 Start([Start])
   randomNum(1,100)
   askGuess(Enter your guess from 1 to 100)
