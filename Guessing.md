@@ -2,17 +2,10 @@
 
 ```mermaid
 flowchart TD
-Start([Start])
-  randomNum(1,100)
-  askGuess(Enter your guess from 1 to 100)
-  if (guess < randomNum)
-    then(Too Low! Try Again!)
-    jump askGuess
-  else if (guess > randomNum)
-    then(Too High! Try Again!)
-    jump askGuess
-  else
-    then(Correct)
-    End([You Win!])
-End
+Start([Start])-->Random("Rndm 1 to 100")
+Random-->output["Guess a number from 1 to 100"]
+output-->ifLess("if guess < Rndm")-- True -->outputA["Too Low"]
+ifLess-->ifmore("if guess > Rndm")-- True -->outputB["Too High"]
+ifmore-->outputC["You Win"]-->
+End([End]) 
 ```
