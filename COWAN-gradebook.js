@@ -15,7 +15,6 @@ function fetchGradeData() {
             if(xhr.status !== 200){
                 console.error('Could not get grades.
                     Status: ${xhr.status}');
-
             }
             // And then call the function to update the HTML with our data
             populateGradebook(JSON.parse(xhr.responseText));
@@ -38,7 +37,13 @@ function populateGradebook(data) {
                 // Concatenate the full name:  "last_name, first_name"
                 document.createTextNode(assignment.last_name + ", " + assignment.first_name)
             );
-            // Add the table data columns to the table row
+            columns.grade = document.createElement('td'); // Second column will be the grade
+            columns.grade.appendChild(
+                // Just put the name in text, you could be fancy and figure out the letter grade here
+                // with either a bunch of conditions, or a Javascript "switch" statement
+                document.createTextNode(assignment.total_grade)
+            );
+            //  Add the table data columns to the table row
             row.appendChild(columns.name);
             row.appendChild(columns.grade);
             // Add the row to the table itself to make the data visible
