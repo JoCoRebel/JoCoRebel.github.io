@@ -32,7 +32,7 @@ function populateGradebook(data) {
         data.forEach(function(assignment)){ //For each row of data we're passes in
             let row = document.createElement("tr"); //create a table row element
             let columns = []; // Handy place to stick the columns of information
-            columns.name = document.createElement('td'); // The first columns table data will be the name
+            columns.name = document.createElement("td"); // The first columns table data will be the name
             columns.name.appendChild(
                 // Concatenate the full name:  "last_name, first_name"
                 document.createTextNode(assignment.last_name + ", " + assignment.first_name)
